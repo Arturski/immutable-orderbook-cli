@@ -44,38 +44,13 @@ This toolkit provides a set of scripts for managing NFTs on Immutable's orderboo
    PRIVATE_KEY=<YOUR_PRIVATE_KEY>  
    RPC_URL=<YOUR_RPC_URL>  
    PUBLISHABLE_KEY=<YOUR_PUBLISHABLE_KEY>  
-   COLLECTION_ADDRESS=<YOUR_COLLECTION_ADDRESS>  
    ```
 
    Ensure these variables are correctly set as they are crucial for interacting with the blockchain.
 
 ## Configuration
 
-Modify the `config.ts` file to adjust input parameters such as account addresses, contract addresses, and chain names. Key configurations include:
-
-- **Listing Filters**: Customize filters for fetching listings.  
-- **Inventory Filters**: Customize parameters for fetching owned NFTs.  
-
-```typescript  
-// Example configuration in config.ts
-
-const LISTING_FILTERS = {  
-  contractAddress: undefined,  
-  accountAddress: "0xD509997AB62fDA51c32E64E69Fb090DF8894105e",  
-  fromUpdatedAt: undefined,  
-  sortBy: 'created_at' as 'created_at' | 'updated_at' | 'buy_item_amount',  
-  sortDirection: 'asc' as 'asc' | 'desc',  
-  pageSize: 200,  
-  status: orderbook.OrderStatusName.ACTIVE,  
-};  
-
-const INVENTORY_FILTERS = {  
-  chainName: 'imtbl-zkevm-testnet',  
-  accountAddress: '0xD509997AB62fDA51c32E64E69Fb090DF8894105e',  
-  contractAddress: '',  
-  pageSize: 200,  
-};  
-```
+Modify the `config.ts` file to adjust input parameters from `.env`
 
 ## Usage
 
@@ -111,7 +86,7 @@ Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersHard.json`
 
 ### 4. **Fetch Owned NFTs**
 
-Retrieve and display all NFTs owned by a specified account, with pagination handling.
+Retrieve and display all NFTs owned by a specified account, with pagination handling. Filters can be found inside `src/getInventory.ts` sctipt
 
 ```bash  
 yarn ts-node src/getInventory.ts  
@@ -121,7 +96,7 @@ Output is saved to `dataio/outputInventory.json`.
 
 ### 5. **Get Listings**
 
-Fetch and display listings based on specified filters.
+Fetch and display listings based on specified filters. Filters can be found inside `src/getListedOrders.ts` sctipt
 
 ```bash  
 yarn ts-node src/getListedOrders.ts  
