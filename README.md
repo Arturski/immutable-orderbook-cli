@@ -59,7 +59,7 @@ Modify the `config.ts` file to adjust input parameters from `.env`
 List NFTs using predefined input configurations.
 
 ```bash  
-yarn ts-node src/listOrders.ts  
+ts-node src/listOrders.ts  
 ```
 
 Place your listing parameters in `dataio/inputListOrders.json`.
@@ -69,7 +69,7 @@ Place your listing parameters in `dataio/inputListOrders.json`.
 Perform a gasless (off-chain) cancel of specified orders.
 
 ```bash  
-yarn ts-node src/cancelOrdersSoft.ts  
+ts-node src/cancelOrdersSoft.ts  
 ```
 
 Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersSoft.json`.
@@ -79,7 +79,7 @@ Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersSoft.json`
 Perform an on-chain cancel of specified orders, ensuring the cancellation is recorded on the blockchain.
 
 ```bash  
-yarn ts-node src/cancelOrdersHard.ts  
+ts-node src/cancelOrdersHard.ts  
 ```
 
 Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersHard.json`.
@@ -89,7 +89,7 @@ Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersHard.json`
 Retrieve and display all NFTs owned by a specified account, with pagination handling. Filters can be found inside `src/getInventory.ts` sctipt
 
 ```bash  
-yarn ts-node src/getInventory.ts  
+ts-node src/getInventory.ts  
 ```
 
 Output is saved to `dataio/outputInventory.json`.
@@ -99,7 +99,7 @@ Output is saved to `dataio/outputInventory.json`.
 Fetch and display listings based on specified filters. Filters can be found inside `src/getListedOrders.ts` sctipt
 
 ```bash  
-yarn ts-node src/getListedOrders.ts  
+ts-node src/getListedOrders.ts  
 ```
 
 Output is saved to `dataio/outputListedOrders.json`.
@@ -109,7 +109,7 @@ Output is saved to `dataio/outputListedOrders.json`.
 Fetch details of a specific listing using its order ID.
 
 ```bash  
-yarn ts-node src/getListedOrdersById.ts <order-id>  
+ts-node src/getListedOrdersById.ts <order-id>  
 ```
 
 Replace `<order-id>` with the actual order ID you want to query.
