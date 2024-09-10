@@ -1,0 +1,79 @@
+[
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "18",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    },
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"
+        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "17",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    },
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"
+        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "16",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    },
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"
+        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "15",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    },
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"
+        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "14",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    },
+    {
+        "buy": {
+            "amount": "10000000000000000000",
+            "type": "NATIVE"
+        },
+        "sell": {
+            "contractAddress": "0x04d022f51c96d21d276417c69a14349c9a3667db",
+            "tokenId": "13",
+            "type": "ERC721",
+            "amount": "1"
+        },
+        "makerFees": []
+    }
+]
