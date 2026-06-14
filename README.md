@@ -1,6 +1,6 @@
 # Immutable Orderbook CLI examples
 
-This toolkit provides a set of scripts for managing NFTs on Immutable's orderbook, including listing, canceling (both hard and soft), and fetching NFTs owned by a particular account. It is designed to interact with the Immutable SDK via an EOA wallet which doesnt require a browser to sign transactions, enabling projects to perform order-related operations on the open orderbook.
+This toolkit provides a set of scripts for managing NFTs on Immutable's orderbook, including listing, canceling (both hard and soft), and fetching NFTs owned by a particular account. It is designed to interact with the Immutable SDK via an EOA wallet which doesn't require a browser to sign transactions, enabling projects to perform order-related operations on the open orderbook.
 
 ## Features
 
@@ -86,7 +86,7 @@ Ensure the order IDs to cancel are listed in `dataio/inputCancelOrdersHard.json`
 
 ### 4. **Fetch Owned NFTs**
 
-Retrieve and display all NFTs owned by a specified account, with pagination handling. Filters can be found inside `src/getInventory.ts` sctipt
+Retrieve and display all NFTs owned by a specified account, with pagination handling. Filters can be found inside `src/getInventory.ts` script
 
 ```bash  
 ts-node src/getInventory.ts  
@@ -96,7 +96,7 @@ Output is saved to `dataio/outputInventory.json`.
 
 ### 5. **Get Listings**
 
-Fetch and display listings based on specified filters. Filters can be found inside `src/getListedOrders.ts` sctipt
+Fetch and display listings based on specified filters. Filters can be found inside `src/getListedOrders.ts` script
 
 ```bash  
 ts-node src/getListedOrders.ts  
